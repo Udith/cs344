@@ -10,5 +10,6 @@
 file( GLOB  hdr *.hpp *.h )
 file( GLOB  cu  *.cu)
 SET (HW2_files main.cpp reference_calc.cpp compare.cpp)
-    
+
+find_package(CUDA)
 CUDA_ADD_EXECUTABLE(HW2 ${HW2_files} ${hdr} ${cu})

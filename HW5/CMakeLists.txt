@@ -11,6 +11,7 @@ file( GLOB  hdr *.hpp *.h )
 
 SET (HW5_files main.cu student.cu reference_calc.cpp)
 
+find_package(CUDA)
 CUDA_ADD_EXECUTABLE(HW5 ${HW5_files} ${hdr})
 
 

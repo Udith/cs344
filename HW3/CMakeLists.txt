@@ -11,4 +11,5 @@ file( GLOB  hdr *.hpp *.h )
 file( GLOB  cu  *.cu)
 SET (HW3_files main.cpp loadSaveImage.cpp reference_calc.cpp compare.cpp)
     
+find_package(CUDA)
 CUDA_ADD_EXECUTABLE(HW3 ${HW3_files} ${hdr} ${cu})
